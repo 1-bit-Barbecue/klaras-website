@@ -1,3 +1,13 @@
+title: "Klara Brabec Wagnerova"
+baseurl: "/klaras-website"
+
+languages:
+  en:
+    name: "English"
+    default: true
+  cz:
+    name: "Čeština"
+
 collections:
   authors:
     output: true
