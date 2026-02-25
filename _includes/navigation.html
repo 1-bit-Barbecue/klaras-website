@@ -1,12 +1,29 @@
 <nav>
-  {% for item in site.data.navigation[page.language] %}
-    <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"ge.{% if page.url contains item.link %} class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-  {% for language in site.languages %}
-    {% if language[0] != page.language %}
-        <a href="{{ site.baseurl }}/{{ language[0] }}/{{ page.name | replace: ".md", ".html" }}">{{ language[0] }}</a>
-    {% else %}
-        <span>{{ language[0] }}</span>
-    {% endif %} 
-  {% endfor %}
+  <div class="nav-menu">
+    {% for item in site.data.navigation[page.language] %}
+      {% if item.name contains 'Portfolio' %}
+        <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"{% if page.url contains '/portfolio' %} class="current"{% endif %}>{{ item.name }}</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"{% if page.url contains item.link %} class="current"{% endif %}>{{ item.name }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="nav-languages">
+    {% for language in site.languages %}
+      {% if language[0] != page.language %}
+          <a href="{{ site.baseurl }}/{{ language[0] }}/{{ page.name | replace: ".md", ".html" }}">{{ language[0] }}</a>
+      {% else %}
+          <span>{{ language[0] }}</span>
+      {% endif %} 
+    {% endfor %}
+  </div>
 </nav>
+{% if page.layout contains 'portfolio' %}
+<nav class="portfolio-nav">
+  <div class="portfolio-nav-menu">
+    {% for item in site.data.portfolio[page.language] %}
+      <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"{% if page.url contains item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</nav>
+{% endif %}

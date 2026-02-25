@@ -2,11 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | Klara Brabec Wagnerova</title>
+    <meta name="description" content="Klara Brabec Wagnerova - Writer, Artist, and Creative Professional">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    <main class="container">
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>

@@ -1,13 +1,18 @@
 ---
 layout: default
 ---
-{% include portfolio-navigation.html %}
 {{ content }}
 
-{% assign localized = site.novels | where: 'language', page.language %}
-{% for novel in localized %}
-    <div>
-        <h1>{{ novel.name }}</h1>
-        {{ novel.content | markdownify }}
+<div class="portfolio-grid">
+  {% assign localized = site.novels | where: 'language', page.language %}
+  {% for novel in localized %}
+    <div class="portfolio-card">
+      <div class="portfolio-card-content">
+        <h3>{{ novel.name }}</h3>
+        <div class="portfolio-card-text">
+          {{ novel.content | markdownify }}
+        </div>
+      </div>
     </div>
-{% endfor %}
+  {% endfor %}
+</div>
