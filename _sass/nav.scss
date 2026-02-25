@@ -6,6 +6,8 @@ nav {
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #eee;
   max-width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .nav-menu {
@@ -45,4 +47,14 @@ nav a.current {
   font-weight: 700;
   border-bottom: 2px solid #000;
   padding-bottom: 0.25rem;
+}
+
+.main-nav {
+  z-index: 100;
+  background-color: #fff;
+}
+
+.portfolio-nav {
+  z-index: 101;
+  background-color: #fafafa;
 }

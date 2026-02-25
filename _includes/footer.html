@@ -1,8 +1,10 @@
 <footer>
-    <p>&copy; 2024 Klara Brabec Wagnerova. All rights reserved.</p>
-    <div class="social-links">
-    <a href="#">Instagram</a>
-    <a href="#">Twitter</a>
-    <a href="{{ site.baseurl }}/{{ page.language}}/contact.html">Contact</a>
+    <div class="footer-content">
+        <div>
+            <a href="{{ site.baseurl }}/{{ page.language}}/contact.html">Contact</a>
+        </div>
+        <div>
+            {{site.data.footer[page.language].copyright}}
+        </div>
     </div>
 </footer>

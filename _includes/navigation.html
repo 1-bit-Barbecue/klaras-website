@@ -1,4 +1,4 @@
-<nav>
+<nav class="main-nav">
   <div class="nav-menu">
     {% for item in site.data.navigation[page.language] %}
       {% if item.name contains 'Portfolio' %}
@@ -19,7 +19,7 @@
   </div>
 </nav>
 {% if page.layout contains 'portfolio' %}
-<nav>
+<nav class="portfolio-nav">
   <div class="nav-menu">
     {% for item in site.data.portfolio[page.language] %}
       <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"{% if page.url contains item.link %} class="current"{% endif %}>{{ item.name }}</a>
