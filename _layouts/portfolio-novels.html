@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include portfolio-navigation.html %}
+{{ content }}
+
+{% assign localized = site.novels | where: 'language', page.language %}
+{% for novel in localized %}
+    <div>
+        <h1>{{ novel.name }}</h1>
+        {{ novel.content | markdownify }}
+    </div>
+{% endfor %}

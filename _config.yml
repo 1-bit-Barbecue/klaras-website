@@ -9,20 +9,26 @@ languages:
     name: "Čeština"
 
 collections:
-  authors:
-    output: true
+  novels:
+  poems:
 
 defaults:
   - scope:
-      path: ""
-      type: "authors"
+      path: "**/cz"
     values:
-      layout: "author"
+      language: "cz"
   - scope:
-      path: ""
-      type: "posts"
+      path: "**/en"
     values:
-      layout: "post"
+      language: "en"
+  - scope:
+      path: "/novels"
+    values:
+      layout: "novel"
+  - scope:
+      path: "/poems"
+    values:
+      layout: "poem"
   - scope:
       path: ""
     values:

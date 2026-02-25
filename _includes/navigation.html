@@ -1,5 +1,12 @@
 <nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+  {% for item in site.data.navigation[page.language] %}
+    <a href="{{ site.baseurl }}/{{ page.language}}{{ item.link }}"ge.{% if page.url contains item.link %} class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% for language in site.languages %}
+    {% if language[0] != page.language %}
+        <a href="{{ site.baseurl }}/{{ language[0] }}/{{ page.name | replace: ".md", ".html" }}">{{ language[0] }}</a>
+    {% else %}
+        <span>{{ language[0] }}</span>
+    {% endif %} 
   {% endfor %}
 </nav>

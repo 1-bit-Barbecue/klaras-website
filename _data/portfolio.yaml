@@ -1,0 +1,10 @@
+en:
+  - name: Novels
+    link: /portfolio-novels.html
+  - name: Lyrics
+    link: /portfolio-poems.html
+cz:
+  - name: Knihy
+    link: /portfolio-novels.html
+  - name: Texty
+    link: /portfolio-poems.html
