@@ -2,6 +2,10 @@
 title: Contact
 ---
 
-You can reach me at: [k.b.wagnerova@gmail.com](mailto:k.b.wagnerova@gmail.com)
+<div class="about-image">
+    <img src="{{ site.baseurl }}/assets/images/contact.jpeg">
+</div>
 
-![Klara Brabec Wagnerova]({{ site.baseurl }}/assets/images/office.jpeg)
+<p class="contact-text">
+You can reach me at: <a href="mailto:k.b.wagnerova@gmail.com">k.b.wagnerova@gmail.com</a>
+</p>

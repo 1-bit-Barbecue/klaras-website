@@ -4,14 +4,14 @@ layout: default
 {{ content }}
 
 <div class="portfolio-grid">
-  {% assign localized = site.lyrics | where: 'language', page.language %}
-  {% for poem in localized %}
-    <a class="portfolio-card" href="{{ site.baseurl }}{{ poem.url }}">
+  {% assign localized = site.comics | where: 'language', page.language %}
+  {% for comic in localized %}
+    <a class="portfolio-card" href="{{ site.baseurl }}{{ comic.url }}">
       <div>
         <div class="portfolio-card-content">
-          <h3>{{ poem.title }}</h3>
+          <h3>{{ comic.title }}</h3>
           <div class="portfolio-card-text">
-            {{ poem.blurb }}
+            {{ comic.blurb }}
           </div>
         </div>
       </div>

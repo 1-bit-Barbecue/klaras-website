@@ -2,6 +2,10 @@
 title: Kontakt
 ---
 
-Můžete mě zastihnout na: [k.b.wagnerova@gmail.com](mailto:k.b.wagnerova@gmail.com)
+<div class="about-image">
+    <img src="{{ site.baseurl }}/assets/images/contact.jpeg">
+</div>
 
-![Klara Brabec Wagnerova]({{ site.baseurl }}/assets/images/office.jpeg)
+<p class="contact-text">
+Můžete mě zastihnout na: <a href="mailto:k.b.wagnerova@gmail.com">k.b.wagnerova@gmail.com</a>
+</p>

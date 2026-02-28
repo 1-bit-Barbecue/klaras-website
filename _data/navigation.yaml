@@ -2,13 +2,13 @@ en:
   - name: About
     link: /about.html
   - name: Portfolio
-    link: /portfolio-novels.html
+    link: /portfolio-lyrics.html
   - name: Contact
     link: /contact.html
 cz:
   - name: O mně
     link: /about.html
   - name: Portfolio
-    link: /portfolio-novels.html
+    link: /portfolio-lyrics.html
   - name: Kontakt
     link: /contact.html

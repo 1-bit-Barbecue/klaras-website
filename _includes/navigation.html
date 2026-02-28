@@ -11,7 +11,7 @@
   <div class="nav-languages">
     {% for language in site.languages %}
       {% if language[0] != page.language %}
-          <a href="{{ site.baseurl }}/{{ language[0] }}/{{ page.name | replace: ".md", ".html" }}">{{ language[0] }}</a>
+          <a href="{{ site.baseurl }}{{page.url | replace: page.language, language[0] }}">{{ language[0] }}</a>
       {% else %}
           <span>{{ language[0] }}</span>
       {% endif %} 

@@ -1,10 +1,18 @@
 en:
+  - name: Lyrics
+    link: /portfolio-lyrics.html
+  - name: Comics
+    link: /portfolio-comics.html
   - name: Novels
     link: /portfolio-novels.html
-  - name: Lyrics
-    link: /portfolio-poems.html
+  - name: Shorts
+    link: /portfolio-shorts.html
 cz:
+  - name: Texty
+    link: /portfolio-lyrics.html
+  - name: Komiksy
+    link: /portfolio-comics.html
   - name: Knihy
     link: /portfolio-novels.html
-  - name: Texty
-    link: /portfolio-poems.html
+  - name: Krátké příběhy
+    link: /portfolio-shorts.html

@@ -9,8 +9,14 @@ languages:
     name: "Čeština"
 
 collections:
+  lyrics:
+    output: true
+  comics:
+    output: true
   novels:
-  poems:
+    output: true
+  shorts:
+    output: true
 
 defaults:
   - scope:

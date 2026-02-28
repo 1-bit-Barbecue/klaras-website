@@ -129,3 +129,6 @@ The site uses SCSS for styling. Main styles are in `_sass/main.scss`.
 ## Languages
 
 The site supports multiple languages (English and Czech). Language-specific content is organized in separate directories and collections, allowing for a fully multilingual experience.
+
+TODO
+- missing social media links

@@ -6,13 +6,15 @@ layout: default
 <div class="portfolio-grid">
   {% assign localized = site.novels | where: 'language', page.language %}
   {% for novel in localized %}
-    <div class="portfolio-card">
+    <a class="portfolio-card" href="{{ site.baseurl }}{{ novel.url }}">
+      <div>
       <div class="portfolio-card-content">
-        <h3>{{ novel.name }}</h3>
+        <h3>{{ novel.title }}</h3>
         <div class="portfolio-card-text">
-          {{ novel.content | markdownify }}
+          {{ novel.blurb }}
         </div>
       </div>
-    </div>
+      </div>
+    </a>
   {% endfor %}
 </div>
