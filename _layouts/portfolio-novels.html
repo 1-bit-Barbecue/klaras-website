@@ -8,12 +8,12 @@ layout: default
   {% for novel in localized %}
     <a class="portfolio-card" href="{{ site.baseurl }}{{ novel.url }}">
       <div>
-      <div class="portfolio-card-content">
-        <h3>{{ novel.title }}</h3>
-        <div class="portfolio-card-text">
-          {{ novel.blurb }}
+        <div class="portfolio-card-content">
+          <h3>{{ novel.title }}</h3>
+          <div class="portfolio-card-text">
+            {{ novel.blurb }}
+          </div>
         </div>
-      </div>
       </div>
     </a>
   {% endfor %}
